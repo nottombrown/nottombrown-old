@@ -1,0 +1,102 @@
+
+
+/* Shamelessly stolen from elliotkember.com, which was stolen from maxvoltar.com, which in turn was shamelessly stolen from chatrboxapp.com. */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: #fff;
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 3px;
+}
+
+
+::-webkit-scrollbar-track-piece {
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #008C9E;;
+    opacity: 0.5;
+    -webkit-border-radius: 3px;
+    position: relative;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 50px;
+    background-color: #999;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background-color: #008C9E;
+}
+::-webkit-scrollbar-thumb:vertical:active, ::-webkit-scrollbar-thumb:vertical:focus{
+	background-color: #008C9E;
+}
+
+
+html {
+	/*overflow-y: scroll;*/
+	overflow: auto;
+	/*width: 100% !important;*/
+}
+
+@media only screen and (max-device-width:480px) {
+	html {
+		overflow: auto;
+	}
+}
+
+
+/* @group default */
+
+#wrapper {
+  margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#turn_wrapper {
+  left: 10px !important;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	margin: 0;
+}
+
+@media only screen and (max-device-width:480px) {
+	body {
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+		overflow: auto;
+	}
+}
+
+/* @end */
