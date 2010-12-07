@@ -38,7 +38,7 @@ p, div {
 }
 
 #logo{
-  background:url("tri.png");
+  background:url("/images/tri.png");
   position:absolute;
   top:-25px;
   left:480px;
@@ -46,20 +46,11 @@ p, div {
   height:180px;
 }  
 #divider {
-    background:url("divider.png");
+    background:url("/images/divider.png");
     width:700px;
     height:8px;
     margin-bottom:1em;
   }
-
-#header-color {
-  height:inherit;
-  width:200px;
-  background:url('blues.png');
-  background-repeat:no-repeat;
-  position:fixed;
-  right:0px;
-}
 
 #header-bar {
     display:none;
