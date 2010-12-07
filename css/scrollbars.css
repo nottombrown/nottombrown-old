@@ -30,7 +30,7 @@
 
 ::-webkit-scrollbar-thumb:vertical {
     height: 50px;
-    background-color: #008C9E;;
+    background-color: #008C9E;
     opacity: 0.5;
     -webkit-border-radius: 3px;
     position: relative;

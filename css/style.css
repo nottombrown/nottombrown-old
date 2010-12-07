@@ -1,52 +1,56 @@
 html { 
-  font-family:"Times New Roman",Georgia,Serif;
+  font-family:Arial,sans-Serif;
   text-rendering: optimizeLegibility;
 }
 body {
   margin: 0px;
+  color:#444;
 }
 #wrapper {
-    width: 800px;
-    margin: 0 auto;
-    padding: 10px 50px;
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px 50px;
 }
+.narrow {
+  width:340px;
+  display:inline-block;
+}
+
+#work{
+  padding-bottom:1em;
+}
+
 h1 {
-  font-size: 30px;
+  font-size: 55px;
+  margin:0px;
+}
+h2 {
+  font-size:24px;
 }
 h1, h2 {
   font-weight: normal;
   position: relative;
 }
 p, div {
-  font-family: Georgia;
   font-size: 18px;
-  line-height: 1.6;
-  width:800px;
+  line-height: 1.2;
+  width:700px;
 }
 
-p a, div a {
-  border-bottom: 1px solid #008C9E;
-}
-html p a:hover, html div a:hover {
-  color: white;
-  background: #008C9E !important;
-  border-bottom: 1px dotted #FFFF00;
-}
-p em, p a, div a, h2 a, h1 a {
-  font-style: italic;
-}
-
-.dot {
-  display: block;
-  width: 15px;
-  height: 15px;
-  background: #008C9E;
-  float: left;
-  position: absolute;
-  left: -30px;
-  top: 25%;
-  
-}
+#logo{
+  background:url("tri.png");
+  position:absolute;
+  top:-25px;
+  left:480px;
+  width:200px;
+  height:180px;
+}  
+#divider {
+    background:url("divider.png");
+    width:700px;
+    height:8px;
+    margin-bottom:1em;
+  }
 
 #header-color {
   height:inherit;
@@ -64,101 +68,33 @@ p em, p a, div a, h2 a, h1 a {
     width:100%;
     position:fixed;
     top:0px;
-  }
-
-h1 .dot {
-  top: 30%;
+}
+  
+#two-col{
+  display:block;
+  position:relative;
+  
+}
+#quotes {
+  position:absolute;
+  left:360px;
+}
+#contact {
+  margin-bottom:2em;
+}
+.quotes {
+  width:inherit;
+}
+ul, menu, dir {
+  -webkit-padding-start:0px;
 }
 
-h2 .dot {
-  top: 33%;
-}
-
-p a, p em, div em, div a {
-  padding: 0 3px 0 3px !important;
-  color: white;
-  text-decoration: none;
-}
-
-em {
-	background: #008C9E;
-	color: white;
-	padding-right: 1px;
-}
-
-a {
-  color: #008C9E !important;
-  border-bottom: 1px solid #008C9E !important;
-  text-decoration: none;
-}
-
-a:hover {
-  background: #008C9E !important;
-  color: #fff !important;
+li {
+  padding-bottom:1em;
 }
 
 em {
 	background: #008C9E;
-}
-
-
-
-/* Title links */
-h1 a {
-  color: #008C9E;
-}
-
-#blog {
-	background: url(/images/blog.png) top left no-repeat;
-	position: absolute;
-	right: 120px;
-	top: 0;
-	width: 220px;
-	height: 90px;
-	color: white;
-	text-align: center;
-	padding-top: 30px;
-	font-style: italic;
-	text-decoration: none;
-	z-index: 1000;
-	opacity: 0.3;
-}
-
-#blog:hover {
-	opacity: 1;
-	padding-top: 50px;
-	background-position: 0 -143px;
-}
-
-.thinkpink {
-  background: #333;
-  color: #008C9E !important;
-	word-spacing: -0.3em;
-}
-.thinkpink span {
-  color: white;
-}
-* .thinkpink:hover {
-  color: white !important;
-}
-.thinkpink:hover span {
-  color: #333;
-}
-
-.transparent {
-  opacity: 0.3;
-}
-.transparent:hover {
-  opacity: 1;
-}
-
-a.the404 {
-  border-color: #008C9E; 
-  color: #008C9E;
-}
-a.the404:hover {
-  color: #ffffff;
-  background: #008C9E;
 }
 
 ::selection {
@@ -176,4 +112,31 @@ em::selection  {
 em::-moz-selection {
 	background: #ffeeff !important;
 	color: #ffffff !important;
+}
+
+.work{
+  font-size: 14px;
+  list-style:none;
+  text-align:right;
+}
+.work h2{
+  text-align:left;
+}
+
+h2{
+  margin:0px;
+}
+
+a{
+  padding:0px;
+  margin:0px;
+  color:#000000 !important;
+  border-bottom:0px !important;
+  text-align:left !important;
+  text-decoration:none;
+}
+
+a:hover{
+  background: #008C9E;
+  color: #fff !important;
 }

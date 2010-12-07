@@ -4,23 +4,32 @@
 <html lang="en">
     <head>
     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-        <title>Not Tom Brown</title> 
+        <title>NOTTOMBROWN</title> 
         <meta name="author" content="Tom Brown"> 
-        <meta name="keywords" content="Tom, Brown, developer, django, javascript, HTML, CSS" > 
-        <meta name="description" content="The portfolio site of Tom Brown, a Django developer based in San Francisco." > 
+        <meta name="keywords" content="Tom Brown developer django javascript HTML CSS" > 
+        <meta name="description" content="The portfolio site of Tom Brown a Django developer based in San Francisco." > 
         <link rel="stylesheet" type="text/css" href="css/style.css"> 
         <link rel="stylesheet" type="text/css" href="css/scrollbars.css"> 
         <link rel="shortcut icon" href="favicon.ico"> 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"> 
         </script>
+
         
-        <script type="text/javascript"> 
-          $(function(){
-            $('body').focus();
-            if($.browser.webkit && $('#wrapper').length == 1 && !navigator.userAgent.match(/iPad/i)){
-              $('head').append('<link rel="stylesheet" href="/css/scrollbars.css" type="text/css" />');
-            }
-          })
+        
+        <script type="text/javascript">
+        function cycleQuotes(currentQuote){
+            var numQuotes = 3;
+            $(".quotes:eq("+currentQuote+")").clearQueue().fadeIn(400).delay(4000).fadeOut(400).queue(function(){
+                cycleQuotes((currentQuote+1) % numQuotes);
+            });
+        }
+          $(document).ready(function(){           
+                  $(".quotes").hide();
+                  cycleQuotes(1);
+            $('a, h1').css('-webkit-transition', 'ease 0.3s')
+                  .css('-o-transition', 'ease 0.3s')
+                  .css('-moz-transition', 'ease 0.3s')
+              });
         </script>
         
     </head>
@@ -28,47 +37,57 @@
        
         <div id="wrapper"> 
             <h1 id="name">
-                <span class="dot"></span> 
-                Tom Brown
+                <a href="http://nottombrown.com">NOTTOMBROWN</a> 
+                            <div id="logo"></div>
             </h1>
-            <p class="name">
-                is a web developer based in San Francisco who builds and maintains <br>
-                scalable applications, and wants to make your idea live on the internet.
-            </p>
 
-            <h2 id="work">
-                <span class="dot"></span>
-                Some of the stuff he's done includes
-            </h2>
-            <p class="work">
-                <a target="_blank" href="http://sevicimapa.com" title="SeviciMapa"> SeviciMapa</a> - an application to let Sevillans monitor and predict bicycle availability in real time,<br />
-                <a target="_blank" href="http://gordonforcouncil.com" title="Gordon For Council"> Gordon for Council</a> - a campaign site for Gordon Huether of Napa County,<br />
-                A <a target="_blank" href="https://github.com/nottombrown/processing-js" title="javascript unit testing tool">javascript unit testing tool</a> incorporated into the <a target="_blank" href="http://processingjs.org" title="Processing.js"> Processing.js</a> canvas framework,<br />
-                <a target="_blank" href="http://buyusbeer.com" title="BuyUsBeer"> BuyUsBeer</a> - graciously covered by Chris Varenhorst and <a target="_blank" href="http://hackaday.com/2010/05/17/old-school-vending-machine-learns-new-tricks/" title="HackADay">  HackADay</a>,<br />
-                <a target="_blank" href="http://zipcarpromotionalcode.com/" title="ZipCarPromotionalCode"> ZipCarPromotionalCode</a> - as a foray into SEO,<br />
-                <a target="_blank" href="drivetrain/" title="Hiriko DriveTrain Prototype"> Hiriko DriveTrain Simulation</a> - a proof of concept for the system to be used in <a target="_blank" href=" http://www.hiriko.com/" title="Hiriko ">Hiriko</a> vehicles, <br />
-                <a target="_blank" href="http://varanasi.xvm.mit.edu" title="Varanasi Lab"> Varanasi Lab</a> - a site for the Varanasi Research Group at MIT,<br />
-                <a target="_blank" href="http://plugins.jquery.com/project/droplets" title="jQuery Droplets"> jQuery Droplets</a> - a jQuery plugin that uses CSS3 animations to make droplets on any div,<br />
-                Developed the control system for the <a target="_blank" href="http://www.youtube.com/watch?v=HnNHMw9QrVY&feature=fvw" title="MIT CityCar Prototype"> MIT CityCar Prototype</a>,<br />
-                Google Enterprise Test Farm - an automated testing system for Google's <a target="_blank" href="http://www.google.com/enterprise/search/gsa.html"title="Google Search Appliances">GSAs</a> 
-            </p>
-                <h2 id="quotes">
-                <span class="dot"></span>
-                People say things like
-            </h2>
-            <p class="quotes">
-                "Tom Brown's expertise proved invaluable for the project." - <a target="_blank" href="http://www.media.mit.edu/people/wjm"> Professor William J Mitchell</a>, MIT<br />
-                "Thanks to Tom, our campaign's web presence is on track." - <a target="_blank" href="http://gordonforcouncil.com" title="Gordon For Council"> Gordon Huether</a><br />
-                "Tom still owes me a full chicken." - Justin Cannon<br />
-
-                <h2 id="contact">
-                <span class="dot"></span>
-                You can contact him
-            </h2>
-            <p class="contact">
-                <span class="contact_method">Twitter:</span>    <a target="_blank" href="http://twitter.com/nottombrown" title="Tom Brown on Twitter">@nottombrown</a>            <br>
-                <span class="contact_method">Email:  </span>    <a href="mailto:nottombrown@gmail.com" title="Email Tom Brown.">nottombrown@gmail.com</a> <br> 
-            </p>
+            <h2 id="work">BUT RATHER SOME THINGS HE MADE</h2>
+            <ul class="work">
+                <li><h2><a target="_blank" href="http://sevicimapa.com" title="SeviciMapa"> SEVICIMAPA</a></h2> 
+                An application to let users of the Sevici system to monitor and predict bicycle availability in real time</li>
+                <li><h2><a target="_blank" href="http://gordonforcouncil.com" title="Gordon For Council"> GORDON FOR COUNCIL</a></h2>
+                Website design and campaign campaign management for Gordon Huether of Napa County</li>
+                <li><h2><a target="_blank" href="https://github.com/nottombrown/processing-js" title="javascript unit testing tool">PROCESSINGJS UNIT TESTING TOOL</a></h2>
+                     A javascript tool incorporated into the <a target="_blank" href="http://processingjs.org" title="Processing.js"> Processing.js</a> canvas testing framework</li>
+                <li><h2><a target="_blank" href="http://zipcarpromotionalcode.com/" title="ZipCarPromotionalCode"> ZIPCARPROMOTIONALCODE</a></h2>
+                Designed as an experiment in SEO. Over five thousand people have clicked through to zipcar</li>
+                <li><h2><a target="_blank" href="http://varanasi.xvm.mit.edu" title="Varanasi Lab"> VARANASI LAB</a></h2>
+                A site for the Varanasi Lab for Nanoengineered Surfaces & Coatings Research Group at MIT</li>
+                <li><h2><a target="_blank" href="http://plugins.jquery.com/project/droplets" title="jQuery Droplets"> JQUERY DROPLETS</a></h2>
+                Published a jQuery plugin that uses CSS3 animations to make pretty droplets on any website </li>
+                <li><h2><a target="_blank" href="http://www.youtube.com/watch?v=HnNHMw9QrVY&feature=fvw" title="MIT CityCar Prototype"> MIT CITYCAR PROTOTYPE</a></h2>
+                    Developed the control system for the 2008 demonstration at the Milan Motor Show </li>
+                <li><h2><a href="http://www.google.com/enterprise/search/gsa.html"title="Google Search Appliances">GOOGLE ENTERPRISE TEST FARM</a></h2> 
+                    An automated internal testing system for Google's <a target="_blank" href="http://www.google.com/enterprise/search/gsa.html"title="Google Search Appliances">Google Search Appliances</a> </li>
+                    <li><h2><a target="_blank" href="drivetrain/" title="Hiriko DriveTrain Prototype"> HIRIKO DRIVETRAIN SIMULATION</a></h2>
+                    A processing.js proof of concept for the system to be used in <a target="_blank" href=" http://www.hiriko.com/" title="Hiriko ">Hiriko</a> vehicles </li>
+            </ul>
+            <div id="divider"></div>
+            <div id="two-col">
+                 <div class="narrow" id="contact">
+                        <h2>
+                        <span ></span>
+                        CONTACT
+                        </h2>
+                        <p class="contact">
+                            <span class="contact_method">Twitter:</span>    <a target="_blank" href="http://twitter.com/nottombrown" title="Tom Brown on Twitter">@nottombrown</a>            <br>
+                            <span class="contact_method">Email:  </span>    <a href="mailto:nottombrown@gmail.com" title="Email Tom Brown.">nottombrown@gmail.com</a> <br> 
+                        </p>
+                </div>
+                <div class="narrow" id="quotes">
+                    <h2>
+                    <span ></span>
+                    QUOTES
+                </h2>
+                <p class="quotes">
+                    "Tom Brown's expertise proved invaluable for the project." - <a target="_blank" href="http://www.media.mit.edu/people/wjm"> Professor William J Mitchell</a> MIT
+                </p><p class="quotes">
+                    "Thanks to Toms our campaign's web presence is on track." - <a target="_blank" href="http://gordonforcouncil.com" title="Gordon For Council"> Gordon Huether</a>
+                </p><p class="quotes">
+                    "Tom still owes me a full chicken." - <a target="_blank" href="http://lingtinc.com" title="Justin Cannon"> Justin Cannon</a>
+                </p>
+                </div>
+            </div>
         </div>
          <div id="header-bar">
                 <div id="header-color">
